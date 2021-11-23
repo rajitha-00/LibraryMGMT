@@ -61,7 +61,7 @@
 
                                     
                     <div class="registration">
-                        <p>Welcome to the Library!!  <a href="userlogin.php" > Login here</a></p>
+                        <p>Welcome  <a href="userlogin.php" > Login here</a></p>
                     </div>
                     
                     
