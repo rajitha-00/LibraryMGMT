@@ -1,0 +1,144 @@
+
+@media (max-width: 991px){
+    header{
+        padding: 20px 20px 0px 0px;
+    }
+    body{
+        min-height: 70vh; 
+    }
+    section {   
+        padding: 150px 40px;
+              
+    }
+    .sci {
+    left: 40px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .textBx,
+    .content .imgBox{
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .swiper-slide{
+        height: 300px;
+    }
+    header .logo{
+        margin-left: 15%;
+    }
+
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        position: fixed;
+        display: flex;
+        top: 0;
+        height: 0;
+        width: 100%;
+        height:100%;
+        background: #0e153a;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 10;
+        transition: 0.7s;
+
+
+    }
+    header .navigation li a{
+        display: inline-block;
+        color: #e2f3f5;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 0;
+        margin: 10px 0;
+        font-size: 1.5em;
+        font-weight: 300;
+        transition: 0.7s;
+
+    }
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(./menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.7s;
+
+        cursor: pointer;
+        z-index: 999;
+    } 
+    .toggle.active{
+        position: fixed;
+        right: 40px;
+        background: url(./close-cross.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: 0.7s;
+
+    }
+
+    header .search{
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        margin-left: 30px;
+        transition: 0.7s;
+        background: #e2f3f5;
+    }
+    header .search .icon{
+        font-size: 25px;
+        margin: 5px;
+    }
+    header .search.active{
+        height: 5vh;
+        width: 90vw;
+        margin-left: 10px;
+    }
+
+    header .search .form input{
+        background: transparent;
+        color: #3d5af1;
+        border: none;
+        border-bottom: 2px solid #3d5af1;
+        outline: none;
+        font-size: 17px;
+        padding: 5px 0;
+    }
+    
+    header .search.active .form{
+        display: block;
+    }
+    
+    header .search .form input::placeholder{
+    color: #3d5af1;
+    }
+  
+
+
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0;
+    }
+    .footer-right{
+        flex: 2 0;
+    }
+    .footer{
+        padding-left: 20%;
+    }
+    
+}
+

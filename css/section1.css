@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    background: url(./dollar-gill-0V7_N62zZcU-unsplash.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+section .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(216, 228, 255), rgb(10, 58, 134), rgb(97, 147, 228));
+    clip-path: circle(75% at right -20%);
+}
+    
+.content{
+      
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBx {
+    margin-top: 10%;
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.content .textBx h2{
+    color: #e2f3f5;
+    font-size: 3em;    
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+    text-shadow: #0f222e 10px  10px 5px;
+}
+.content .textBx p{
+    color: #e2f3f5;
+}
+
+.content .textBx a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #3d5af1;
+    color: #e2f3f5;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid #e2f3f5;
+    
+}
+.content .textBx a:hover{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #e2f3f5;
+    color: #3d5af1;
+    border-radius: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: 2px solid #161616;
+    
+}  
+
+.swiper-container{
+    width:100%;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+
+}
+.content .imgBox{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .imgBox img{
+    max-width: 320px;
+    height: 450px;
+}
+.swiper-slide img{
+    position: absolute;
+    bottom: 2;
+    max-height: 100%;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+} 

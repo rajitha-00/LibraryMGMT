@@ -1,0 +1,190 @@
+.container{
+    position: relative;
+    width: 400px;   
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+}
+
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+   /* background: linear-gradient(45deg,#ff0047,#6eff00);*/
+    pointer-events: none;
+    animation: animate 10s linear infinite;
+
+}
+.container span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 0.03;
+}
+/*@keyframes animate{
+    0%{
+        filter: blur(60px) hue-rotate(0deg);
+    }
+    100%{
+        filter: blur(60px) hue-rotate(360deg);
+    }
+}*/
+.container01{
+    position: relative;
+    width: 400px;
+    min-height: 600px;
+    max-height: 800px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+    margin-top: 5%;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container01::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+
+.container01::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+   /* background: linear-gradient(45deg,#ff0047,#6eff00);*/
+    pointer-events: none;
+    animation: animate 10s linear infinite;
+
+}
+.container01 span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 0.03;
+}
+.form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    z-index: 999;
+    
+    
+}
+
+.form h1{
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-size: 24px;
+    
+}
+
+.form .inputBX{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+
+.form .inputBX input{
+    width: 90%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 0;
+
+}
+
+::placeholder{
+    color: #fff;
+
+}
+.form .inputBX input[type="submit"]{
+    background: #fff;
+    color: #000;
+    border: none;
+    font-weight: 700;
+    max-width: 100px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 8px 8px 12px 0;
+    
+}
+
+.forgotpassword p{
+    color: #eee;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.forgotpassword a{
+    color: #fff;
+    font-weight: 300;
+
+}
+.registration{
+    padding: 0;
+    
+    text-align: center;
+}
+.registration p{
+    color: #eee;
+    font-weight: 300;
+}
+
+.registration a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    background: #3d5af1;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top:40px !important;
+}
+
+.registration a:hover{
+    color: #3d5af1;
+    font-weight: 300;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
